@@ -145,6 +145,7 @@ function VoiceAgent() {
             <div style={{ padding: "18px 0", textAlign: "center", position: "relative" }}>
                 <button
                     onClick={recording ? stopRecording : startRecording}
+                    onTouchStart={recording ? stopRecording : startRecording}
                     disabled={loading}
                     style={{
                         background: recording ? "#1565c0" : "#1976d2",
